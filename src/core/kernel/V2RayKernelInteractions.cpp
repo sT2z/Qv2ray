@@ -168,7 +168,7 @@ namespace Qv2ray::core::kernel
             QProcess process;
             process.setProcessEnvironment(env);
             DEBUG("Starting V2Ray core with test options");
-            if (kernelPath.contains("xray", Qt::CaseInsensitive);)
+            if (kernelPath.contains("xray", Qt::CaseInsensitive))
                 process.start(kernelPath, { "-test", "-config", path }, QIODevice::ReadWrite | QIODevice::Text);
             else
                 process.start(kernelPath, { "test", "-config", path }, QIODevice::ReadWrite | QIODevice::Text);
